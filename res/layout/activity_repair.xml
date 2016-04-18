@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_repair"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/android_layout_bg">
+
+    	<RelativeLayout
+        android:id="@+id/repair_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/android_title_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="门锁维修"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text_size"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="14dp"
+        android:text="联系电话"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/repair_photo"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="22dp"
+        android:text="保修描述"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/textView2"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/repair_take_photo"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/repair_photo"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/repair_top_right_btn" />
+
+    <ImageView
+        android:id="@+id/repair_photo"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/repair_top_layout"
+        android:paddingTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

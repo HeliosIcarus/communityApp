@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_layout_bg">
+	<RelativeLayout
+        android:id="@+id/index_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/android_title_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="主页"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text_size"/>
+    </RelativeLayout>
+        <com.example.myView.mySwitcherView
+        android:id="@+id/index_top_slidingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+        android:layout_below="@id/index_top_layout"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/index_top_btn1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/test_image_1" />
+
+            <Button
+				android:id="@+id/index_top_btn2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/test_image_1" />
+
+            <Button
+                android:id="@+id/index_top_btn3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/test_image_1" />
+
+            <Button
+                android:id="@+id/index_top_btn4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/test_image_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dip"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </com.example.myView.mySwitcherView>
+</RelativeLayout>

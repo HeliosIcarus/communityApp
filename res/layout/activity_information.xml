@@ -1,0 +1,63 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_layout_bg">
+    <RelativeLayout
+        android:id="@+id/information_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/android_title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:text="资讯详情"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/information_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+       	android:layout_gravity="center"
+       	android:layout_below="@id/information_top_layout"
+       	android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        <ImageView
+	        android:id="@+id/information_details_image"
+	        android:layout_width="200dp"
+	        android:layout_height="150dp"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="20dp"
+	        android:layout_gravity="center"
+	        android:src="@drawable/image_default_bg" />
+        <TextView
+	        android:id="@+id/information_details_text"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@id/information_details_image"
+	        android:paddingTop="10dp"
+	        android:textSize="20sp"
+	        android:text="    8月27日下午，芦南社区召开了党员代表会议，举行了新一届党组织换届选举工作。
+　　首先社区党总支书记王亚辉对这三年党建工作进行了汇报总结；接着会议通过选举办法，采用无记名投票方式，产生了新一届社区党委班子，推选了社区党委书记。
+　　会上，街道基层组织建设办主任向各位党员代表提了二点要求：一是党员代表要认真履职、发挥先锋模范作用。党员代表是社区广大党员同志选举产生的，既是荣誉，是广大党员对你们的信任肯定，同时也是责任在肩，更要坚持党性原则，全力支持、积极配合社区党委班子开展工作。二是党员代表要带头开展芦南社区“五形党建”直通车品牌党建工作。芦南社区作为柴桥老社区之一，日常基础工作繁琐，如何在日常工作中融入党建品牌，又如何让党建引领社区各项工作的开展，是党员代表的共同责任，希望我们的党员代表能出谋划策，为社区建设共同努力。
+　　芦南社区党委下辖五个按照地域划分的居民支部和一个非公企业支部，是一个以老党员为主体的老龄支部，芦南社区又是一个古老的街坊社区，能看到一座座古朴安静的墙门式四合院建筑，芦南社区党总支考虑到墙门多、党员老的特点，因地制宜开展党建工作，推出了党建墙门，以五形党建直通车为平台，把党建服务延伸至墙门各个角落，拓宽了区域党建的新途径。 " />
+            
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
